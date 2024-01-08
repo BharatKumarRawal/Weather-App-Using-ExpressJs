@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Piazzolla:opsz,wght@8..30,100;8..30,200;8..30,300;8..30,400;8..30,500;8..30,600&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Neuton", serif;
+  font-family: "Piazzolla", serif;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: var(--main-bg);
+}
+.row .navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 20px 0;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar .nav-item .active {
+  color: #fff;
+}
+.navbar .navbar-toggler {
+  background-color: grey;
+}
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: var(--main-color);
+}
+
+.main_header_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_left p {
+  font-size: 20px;
+}
+.main_header_left h1 {
+  font-size: 36px;
+  margin: 0px 0 20px 0;
+  text-transform: capitalize;
+}
+.main_header_left span {
+  color: #0097e6;
+}
+.main_header_right {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_left button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+.main_header_left button:hover {
+  box-shadow: 0px 8px 6px -6px var(--main-color);
+}
+.main_header_right figure img {
+  filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.7));
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 3;
+  font-size: 16px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
